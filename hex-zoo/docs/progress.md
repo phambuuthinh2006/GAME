@@ -19,3 +19,9 @@ All work stays inside hex-zoo. The shared Obsidian board was read; it has no Hex
 - DOM/CSS keeps one focal board. Board uses the actual remaining portrait height; dialogs scroll and keep decision buttons visible. Bundled local Nunito, no CDN fonts.
 - Daily continuation checks today's seed and active phase; a persisted result ledger prevents repeat wins on reload. Regression tests included.
 - The platform boundary/adapters and art lookup are included with UI boot because the playable entry imports them. SDK behavior is verified separately in milestone 4.
+
+## Milestone 4 — CrazyGames platform
+- SDK v3 production adapter, local dev mock and awaited Data migration verified. Loading, real-play lifecycle, pause/dialog/ad stops, SDK locale, mute listener and completion-only ad reward callbacks implemented.
+- Seven adapter tests pass. Built nested-path browser check validates lifecycle, migration, initial-download budget, no external resources except the SDK, and first-refusal button disabling using an explicit SDK double.
+- Native WebAudio gain instrumentation verifies that host mute and music/sound toggles silence existing notes, even after another tap resumes the AudioContext.
+- Live portal ads, Data synchronization on real Safari/iOS and provider iframe behavior remain untested because no upload or sign-in was authorized.
