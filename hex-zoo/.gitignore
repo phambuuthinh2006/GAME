@@ -1,0 +1,5 @@
+node_modules/
+dist-crazygames/
+art-in/*
+!art-in/.gitkeep
+artifacts/

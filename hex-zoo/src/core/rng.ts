@@ -1,0 +1,3 @@
+export function hashSeed(seed:string):number { let h=2166136261; for(const c of seed) h=Math.imul(h^c.charCodeAt(0),16777619); return h>>>0 || 1 }
+export function nextRandom(state:number):[number,number] { let s=state+0x6D2B79F5|0; let t=Math.imul(s^s>>>15,1|s); t^=t+Math.imul(t^t>>>7,61|t); return [((t^t>>>14)>>>0)/4294967296,s>>>0] }
+export class RNG { state:number; constructor(seed:string|number){this.state=typeof seed==='number'?seed:hashSeed(seed)} next(){const [r,s]=nextRandom(this.state);this.state=s;return r} int(n:number){return Math.floor(this.next()*n)} pick<T>(items:readonly T[]):T{return items[this.int(items.length)]} shuffle<T>(items:readonly T[]):T[]{const a=[...items];for(let i=a.length-1;i>0;i--){const j=this.int(i+1);[a[i],a[j]]=[a[j],a[i]]}return a} }
