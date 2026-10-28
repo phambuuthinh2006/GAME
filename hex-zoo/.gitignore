@@ -3,3 +3,7 @@ dist-crazygames/
 art-in/*
 !art-in/.gitkeep
 artifacts/
+
+__pycache__/
+*.pyc
+.venv-art/
