@@ -1,0 +1,562 @@
+{
+  "moss-marten": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Moss Marten",
+    "runtime": true
+  },
+  "fern-finch": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Fern Finch",
+    "runtime": true
+  },
+  "bramble-badger": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Bramble Badger",
+    "runtime": true
+  },
+  "clover-hare": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Clover Hare",
+    "runtime": true
+  },
+  "acorn-dormouse": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Acorn Dormouse",
+    "runtime": true
+  },
+  "canopy-tapir": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Canopy Tapir",
+    "runtime": true
+  },
+  "sprout-okapi": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Sprout Okapi",
+    "runtime": true
+  },
+  "orchard-lemur": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Orchard Lemur",
+    "runtime": true
+  },
+  "thistle-pangolin": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Thistle Pangolin",
+    "runtime": true
+  },
+  "bloom-binturong": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Bloom Binturong",
+    "runtime": true
+  },
+  "dune-fennec": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Dune Fennec",
+    "runtime": true
+  },
+  "amber-meerkat": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Amber Meerkat",
+    "runtime": true
+  },
+  "saffron-oryx": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Saffron Oryx",
+    "runtime": true
+  },
+  "pebble-armadillo": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Pebble Armadillo",
+    "runtime": true
+  },
+  "copper-ibis": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Copper Ibis",
+    "runtime": true
+  },
+  "sunbeam-wombat": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Sunbeam Wombat",
+    "runtime": true
+  },
+  "marigold-emu": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Marigold Emu",
+    "runtime": true
+  },
+  "apricot-quokka": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Apricot Quokka",
+    "runtime": true
+  },
+  "citrine-serval": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Citrine Serval",
+    "runtime": true
+  },
+  "glow-aardvark": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Glow Aardvark",
+    "runtime": true
+  },
+  "brook-otter": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Brook Otter",
+    "runtime": true
+  },
+  "ripple-puffin": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Ripple Puffin",
+    "runtime": true
+  },
+  "lagoon-manatee": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Lagoon Manatee",
+    "runtime": true
+  },
+  "spray-pelican": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Spray Pelican",
+    "runtime": true
+  },
+  "coral-axolotl": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Coral Axolotl",
+    "runtime": true
+  },
+  "drift-capuchin": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Drift Capuchin",
+    "runtime": true
+  },
+  "kelp-dugong": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Kelp Dugong",
+    "runtime": true
+  },
+  "rill-platypus": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Rill Platypus",
+    "runtime": true
+  },
+  "seafoam-seal": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Seafoam Seal",
+    "runtime": true
+  },
+  "mist-kingfisher": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Mist Kingfisher",
+    "runtime": true
+  },
+  "velvet-genet": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Velvet Genet",
+    "runtime": true
+  },
+  "twilight-kakapo": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Twilight Kakapo",
+    "runtime": true
+  },
+  "cinder-porcupine": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Cinder Porcupine",
+    "runtime": true
+  },
+  "moonlit-fossa": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Moonlit Fossa",
+    "runtime": true
+  },
+  "plum-tarsier": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Plum Tarsier",
+    "runtime": true
+  },
+  "cloud-civet": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Cloud Civet",
+    "runtime": true
+  },
+  "violet-kudu": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Violet Kudu",
+    "runtime": true
+  },
+  "starlit-potoo": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Starlit Potoo",
+    "runtime": true
+  },
+  "ink-sengi": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Ink Sengi",
+    "runtime": true
+  },
+  "aurora-colugo": {
+    "path": null,
+    "size": [
+      512,
+      512
+    ],
+    "cutout": true,
+    "label": "Aurora Colugo",
+    "runtime": true
+  },
+  "board-meadow": {
+    "path": null,
+    "size": [
+      1920,
+      1080
+    ],
+    "cutout": false,
+    "label": "Meadow board backdrop",
+    "runtime": true
+  },
+  "board-frost-pockets": {
+    "path": null,
+    "size": [
+      1920,
+      1080
+    ],
+    "cutout": false,
+    "label": "Frost Pockets board backdrop",
+    "runtime": true
+  },
+  "board-sun-parade": {
+    "path": null,
+    "size": [
+      1920,
+      1080
+    ],
+    "cutout": false,
+    "label": "Sun Parade board backdrop",
+    "runtime": true
+  },
+  "board-quiet-hours": {
+    "path": null,
+    "size": [
+      1920,
+      1080
+    ],
+    "cutout": false,
+    "label": "Quiet Hours board backdrop",
+    "runtime": true
+  },
+  "board-lily-pond": {
+    "path": null,
+    "size": [
+      1920,
+      1080
+    ],
+    "cutout": false,
+    "label": "Lily Pond board backdrop",
+    "runtime": true
+  },
+  "board-bloom-trails": {
+    "path": null,
+    "size": [
+      1920,
+      1080
+    ],
+    "cutout": false,
+    "label": "Bloom Trails board backdrop",
+    "runtime": true
+  },
+  "board-family-festival": {
+    "path": null,
+    "size": [
+      1920,
+      1080
+    ],
+    "cutout": false,
+    "label": "Family Festival board backdrop",
+    "runtime": true
+  },
+  "logo": {
+    "path": null,
+    "size": [
+      1024,
+      1024
+    ],
+    "cutout": true,
+    "label": "Text-free animal emblem",
+    "runtime": true
+  },
+  "menu-background": {
+    "path": null,
+    "size": [
+      1920,
+      1080
+    ],
+    "cutout": false,
+    "label": "Menu background",
+    "runtime": true
+  },
+  "shop-keeper": {
+    "path": null,
+    "size": [
+      768,
+      768
+    ],
+    "cutout": true,
+    "label": "Gift shop keeper",
+    "runtime": true
+  },
+  "keeper-mira": {
+    "path": null,
+    "size": [
+      768,
+      768
+    ],
+    "cutout": true,
+    "label": "Mira keeper",
+    "runtime": true
+  },
+  "keeper-oren": {
+    "path": null,
+    "size": [
+      768,
+      768
+    ],
+    "cutout": true,
+    "label": "Oren keeper",
+    "runtime": true
+  },
+  "keeper-niko": {
+    "path": null,
+    "size": [
+      768,
+      768
+    ],
+    "cutout": true,
+    "label": "Niko keeper",
+    "runtime": true
+  },
+  "cover-landscape": {
+    "path": null,
+    "size": [
+      1920,
+      1080
+    ],
+    "cutout": false,
+    "label": "Landscape cover",
+    "runtime": false
+  },
+  "cover-portrait": {
+    "path": null,
+    "size": [
+      800,
+      1200
+    ],
+    "cutout": false,
+    "label": "Portrait cover",
+    "runtime": false
+  },
+  "cover-square": {
+    "path": null,
+    "size": [
+      800,
+      800
+    ],
+    "cutout": false,
+    "label": "Square cover",
+    "runtime": false
+  }
+}
