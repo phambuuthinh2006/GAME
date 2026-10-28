@@ -1,0 +1,389 @@
+{
+  "random": {
+    "bot": "random",
+    "n": 1000,
+    "wins": 1,
+    "winRate": 0.1,
+    "firstClear": 100,
+    "avgPlacements": 18.964,
+    "avgChoices": 7.541,
+    "placementMinutes": 1.2642666666666666,
+    "decisionMinutes": 3.0312666666666668,
+    "avgDay": 3.227,
+    "stalled": 0,
+    "animal": [
+      {
+        "id": "fern-finch",
+        "name": "Fern Finch",
+        "pct": 100
+      },
+      {
+        "id": "moss-marten",
+        "name": "Moss Marten",
+        "pct": 100
+      },
+      {
+        "id": "dune-fennec",
+        "name": "Dune Fennec",
+        "pct": 100
+      },
+      {
+        "id": "coral-axolotl",
+        "name": "Coral Axolotl",
+        "pct": 100
+      },
+      {
+        "id": "ripple-puffin",
+        "name": "Ripple Puffin",
+        "pct": 100
+      },
+      {
+        "id": "copper-ibis",
+        "name": "Copper Ibis",
+        "pct": 100
+      },
+      {
+        "id": "amber-meerkat",
+        "name": "Amber Meerkat",
+        "pct": 100
+      },
+      {
+        "id": "lagoon-manatee",
+        "name": "Lagoon Manatee",
+        "pct": 100
+      },
+      {
+        "id": "cloud-civet",
+        "name": "Cloud Civet",
+        "pct": 100
+      }
+    ],
+    "charm": [
+      {
+        "id": "field-journal",
+        "name": "Field Journal",
+        "pct": 100
+      },
+      {
+        "id": "echo-chime",
+        "name": "Echo Chime",
+        "pct": 100
+      },
+      {
+        "id": "keeper-notebook",
+        "name": "Keeper Notebook",
+        "pct": 100
+      },
+      {
+        "id": "glass-acorn",
+        "name": "Glass Acorn",
+        "pct": 100
+      },
+      {
+        "id": "friendship-knot",
+        "name": "Friendship Knot",
+        "pct": 100
+      }
+    ],
+    "days": [
+      0,
+      468,
+      311,
+      28,
+      82,
+      44,
+      9,
+      32,
+      17,
+      1,
+      6,
+      2
+    ]
+  },
+  "greedy": {
+    "bot": "greedy",
+    "n": 1000,
+    "wins": 311,
+    "winRate": 31.1,
+    "firstClear": 100,
+    "avgPlacements": 40.071,
+    "avgChoices": 37.868,
+    "placementMinutes": 2.6713999999999998,
+    "decisionMinutes": 7.867333333333334,
+    "avgDay": 9.495,
+    "stalled": 0,
+    "animal": [
+      {
+        "id": "rill-platypus",
+        "name": "Rill Platypus",
+        "pct": 54.340836012861736
+      },
+      {
+        "id": "starlit-potoo",
+        "name": "Starlit Potoo",
+        "pct": 53.054662379421224
+      },
+      {
+        "id": "clover-hare",
+        "name": "Clover Hare",
+        "pct": 52.09003215434084
+      },
+      {
+        "id": "ripple-puffin",
+        "name": "Ripple Puffin",
+        "pct": 49.839228295819936
+      },
+      {
+        "id": "orchard-lemur",
+        "name": "Orchard Lemur",
+        "pct": 49.839228295819936
+      },
+      {
+        "id": "spray-pelican",
+        "name": "Spray Pelican",
+        "pct": 47.90996784565916
+      },
+      {
+        "id": "amber-meerkat",
+        "name": "Amber Meerkat",
+        "pct": 47.266881028938904
+      },
+      {
+        "id": "apricot-quokka",
+        "name": "Apricot Quokka",
+        "pct": 46.62379421221865
+      },
+      {
+        "id": "twilight-kakapo",
+        "name": "Twilight Kakapo",
+        "pct": 44.37299035369775
+      },
+      {
+        "id": "pebble-armadillo",
+        "name": "Pebble Armadillo",
+        "pct": 39.87138263665595
+      },
+      {
+        "id": "moonlit-fossa",
+        "name": "Moonlit Fossa",
+        "pct": 38.263665594855304
+      },
+      {
+        "id": "fern-finch",
+        "name": "Fern Finch",
+        "pct": 18.971061093247588
+      },
+      {
+        "id": "drift-capuchin",
+        "name": "Drift Capuchin",
+        "pct": 4.823151125401929
+      },
+      {
+        "id": "canopy-tapir",
+        "name": "Canopy Tapir",
+        "pct": 4.501607717041801
+      },
+      {
+        "id": "sunbeam-wombat",
+        "name": "Sunbeam Wombat",
+        "pct": 3.858520900321544
+      },
+      {
+        "id": "cloud-civet",
+        "name": "Cloud Civet",
+        "pct": 2.8938906752411575
+      },
+      {
+        "id": "thistle-pangolin",
+        "name": "Thistle Pangolin",
+        "pct": 2.2508038585209005
+      },
+      {
+        "id": "seafoam-seal",
+        "name": "Seafoam Seal",
+        "pct": 2.2508038585209005
+      },
+      {
+        "id": "mist-kingfisher",
+        "name": "Mist Kingfisher",
+        "pct": 1.929260450160772
+      },
+      {
+        "id": "citrine-serval",
+        "name": "Citrine Serval",
+        "pct": 1.929260450160772
+      },
+      {
+        "id": "aurora-colugo",
+        "name": "Aurora Colugo",
+        "pct": 1.929260450160772
+      },
+      {
+        "id": "bramble-badger",
+        "name": "Bramble Badger",
+        "pct": 1.2861736334405145
+      },
+      {
+        "id": "ink-sengi",
+        "name": "Ink Sengi",
+        "pct": 0.964630225080386
+      },
+      {
+        "id": "glow-aardvark",
+        "name": "Glow Aardvark",
+        "pct": 0.6430868167202572
+      },
+      {
+        "id": "cinder-porcupine",
+        "name": "Cinder Porcupine",
+        "pct": 0.6430868167202572
+      },
+      {
+        "id": "bloom-binturong",
+        "name": "Bloom Binturong",
+        "pct": 0.6430868167202572
+      },
+      {
+        "id": "saffron-oryx",
+        "name": "Saffron Oryx",
+        "pct": 0.6430868167202572
+      },
+      {
+        "id": "kelp-dugong",
+        "name": "Kelp Dugong",
+        "pct": 0.3215434083601286
+      },
+      {
+        "id": "coral-axolotl",
+        "name": "Coral Axolotl",
+        "pct": 0.3215434083601286
+      },
+      {
+        "id": "plum-tarsier",
+        "name": "Plum Tarsier",
+        "pct": 0.3215434083601286
+      },
+      {
+        "id": "acorn-dormouse",
+        "name": "Acorn Dormouse",
+        "pct": 0.3215434083601286
+      }
+    ],
+    "charm": [
+      {
+        "id": "glass-acorn",
+        "name": "Glass Acorn",
+        "pct": 51.446945337620576
+      },
+      {
+        "id": "keeper-notebook",
+        "name": "Keeper Notebook",
+        "pct": 38.90675241157556
+      },
+      {
+        "id": "trail-marker",
+        "name": "Trail Marker",
+        "pct": 35.048231511254016
+      },
+      {
+        "id": "field-journal",
+        "name": "Field Journal",
+        "pct": 35.048231511254016
+      },
+      {
+        "id": "soft-blanket",
+        "name": "Soft Blanket",
+        "pct": 34.40514469453376
+      },
+      {
+        "id": "friendship-knot",
+        "name": "Friendship Knot",
+        "pct": 33.762057877813504
+      },
+      {
+        "id": "wind-mobile",
+        "name": "Wind Mobile",
+        "pct": 29.903536977491964
+      },
+      {
+        "id": "picnic-cloth",
+        "name": "Picnic Cloth",
+        "pct": 27.009646302250808
+      },
+      {
+        "id": "painted-fence",
+        "name": "Painted Fence",
+        "pct": 27.009646302250808
+      },
+      {
+        "id": "copper-spade",
+        "name": "Copper Spade",
+        "pct": 22.508038585209004
+      },
+      {
+        "id": "echo-chime",
+        "name": "Echo Chime",
+        "pct": 20.257234726688104
+      },
+      {
+        "id": "braided-vine",
+        "name": "Braided Vine",
+        "pct": 18.971061093247588
+      },
+      {
+        "id": "violet-ribbon",
+        "name": "Violet Ribbon",
+        "pct": 17.363344051446948
+      },
+      {
+        "id": "rain-bucket",
+        "name": "Rain Bucket",
+        "pct": 17.363344051446948
+      },
+      {
+        "id": "sun-pendant",
+        "name": "Sun Pendant",
+        "pct": 16.720257234726688
+      },
+      {
+        "id": "rainbow-bell",
+        "name": "Rainbow Bell",
+        "pct": 16.720257234726688
+      },
+      {
+        "id": "shell-pin",
+        "name": "Shell Pin",
+        "pct": 16.39871382636656
+      },
+      {
+        "id": "prism-feather",
+        "name": "Prism Feather",
+        "pct": 14.469453376205788
+      },
+      {
+        "id": "ticket-stamp",
+        "name": "Ticket Stamp",
+        "pct": 13.826366559485532
+      },
+      {
+        "id": "leaf-brooch",
+        "name": "Leaf Brooch",
+        "pct": 12.861736334405144
+      }
+    ],
+    "days": [
+      0,
+      0,
+      19,
+      5,
+      85,
+      115,
+      20,
+      65,
+      129,
+      64,
+      134,
+      364
+    ]
+  }
+}

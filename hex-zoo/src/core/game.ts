@@ -5,14 +5,14 @@ import { KEEPERS, EVENTS } from './content/keepers';
 import { RNG, hashSeed } from './rng';
 import { makeBoard, neighbours, isEdge } from './board';
 import { previewPlacement } from './score';
-export const GOAL_UNITS=[36,140,190,240,260,290,330,370,420,480,560,650];
+export const GOAL_UNITS=[36,160,220,300,350,410,550,670,760,950,1000,1150];
 export function goalForDay(day:number):number{return Math.round((GOAL_UNITS[Math.min(day,12)-1]*Math.pow(1.32,Math.max(0,day-12)))*Math.pow(1.65,day-1))}
 function random<T>(s:RunState,fn:(rng:RNG)=>T):T{const rng=new RNG(s.rng);const value=fn(rng);s.rng=rng.state;return value}
 function tile(s:RunState,animalId:string):Tile{return {uid:`tile-${s.serial++}`,animalId,bonus:0,mult:1}}
 function draw(s:RunState){while(s.hand.length<5&&s.draw.length)s.hand.push(s.draw.pop()!)}
 function clone(s:RunState):RunState{return structuredClone(s)}
 function offers(s:RunState):Offer[]{return random(s,r=>{const animals=r.shuffle(ANIMALS).slice(0,2);const snack=r.pick(SNACKS);return r.shuffle([...animals.map(a=>({kind:'animal' as const,id:a.id,price:0})),{kind:'snack' as const,id:snack.id,price:0}])})}
-function stock(s:RunState):Offer[]{const locked=s.lockedOffer?{...s.lockedOffer,locked:false,sold:false}:undefined;s.lockedOffer=undefined;return random(s,r=>{const charms=r.shuffle(CHARMS.filter(c=>!s.charms.includes(c.id))).slice(0,2);const snacks=r.shuffle(SNACKS).slice(0,2);const result:Offer[]=[...charms.map(c=>({kind:'charm' as const,id:c.id,price:c.price})),...snacks.map(c=>({kind:'snack' as const,id:c.id,price:c.price}))];if(locked)result[0]=locked;return result})}
+function stock(s:RunState):Offer[]{const locked=s.lockedOffer?{...s.lockedOffer,locked:false,sold:false}:undefined;s.lockedOffer=undefined;return random(s,r=>{const charms=r.shuffle(CHARMS.filter(c=>!s.charms.includes(c.id)&&c.id!==locked?.id)).slice(0,2);const snacks=r.shuffle(SNACKS.filter(c=>c.id!==locked?.id)).slice(0,2);const result:Offer[]=[...charms.map(c=>({kind:'charm' as const,id:c.id,price:c.price})),...snacks.map(c=>({kind:'snack' as const,id:c.id,price:c.price}))];if(locked)result[0]=locked;return result})}
 function beginDay(s:RunState):RunState{
  s.phase='playing';s.board=makeBoard();s.score=0;s.goal=goalForDay(s.day);s.maxPlaces=s.day===1?8:s.day>=8?7:8;s.places=s.maxPlaces;s.offers=[];s.rewardChosen=false;s.removed=false;s.eventId=undefined;
  const bonusCells=random(s,r=>r.shuffle(s.board));bonusCells[0].mult=2;bonusCells[1].bonus=8;bonusCells[2].bonus=5;bonusCells[3].bonus=5;
@@ -30,8 +30,11 @@ export function createRun(seed:string,keeperId='mira',daily=false):RunState{
  const s:RunState={seed,rng:hashSeed(seed),keeperId,daily,day:1,score:0,goal:36,places:8,maxPlaces:8,board:[],deck:[],draw:[],hand:[],discard:[],charms:[],snacks:[],coins:0,phase:'playing',offers:[],shop:[],rewardChosen:false,removed:false,totalScore:0,placements:0,won:false,serial:1,history:[]};
  // A seeded travelling roster avoids one compulsory animal dominating every winning zoo.
  const keeper=KEEPERS.find(k=>k.id===keeperId)!;
- const pool=random(s,r=>r.shuffle(ANIMALS));const first=pool.filter(a=>a.family===keeper.family).slice(0,3);const rest=pool.filter(a=>!first.includes(a)).slice(0,7);
- s.deck=[...first,...rest].map(a=>tile(s,a.id));return beginDay(s);
+ const pool=random(s,r=>r.shuffle(ANIMALS));let roster;
+ if(keeper.passive==='edge'){const edge=pool.filter(a=>a.ability==='edge'||a.ability==='corner').slice(0,6);roster=[...edge,...pool.filter(a=>!edge.includes(a)).slice(0,4)]}
+ else if(keeper.passive==='diverse'){const balanced=(['grove','sun','tide','dusk'] as const).flatMap(f=>pool.filter(a=>a.family===f).slice(0,2));roster=[...balanced,...pool.filter(a=>!balanced.includes(a)).slice(0,2)]}
+ else{const first=pool.filter(a=>a.family===keeper.family).slice(0,3);roster=[...first,...pool.filter(a=>!first.includes(a)).slice(0,7)]}
+ s.deck=roster.map(a=>tile(s,a.id));return beginDay(s);
 }
 export function legalMoves(s:RunState):{handIndex:number;cellId:string}[]{if(s.phase!=='playing')return [];return s.hand.flatMap((_,handIndex)=>s.board.filter(c=>!c.blocked&&!c.tile).map(c=>({handIndex,cellId:c.id})))}
 export function placeTile(state:RunState,handIndex:number,cellId:string):{state:RunState;result:ScoreResult}{
